@@ -2,6 +2,7 @@
   "name": "react_spa",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://swd543.github.io/fb-fundraiser/",
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

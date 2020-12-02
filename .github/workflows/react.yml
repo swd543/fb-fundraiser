@@ -24,7 +24,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Install Packages
       run: npx yarn install
-    - name: Build optimized production
+    - name: Build optimized production page
       run: npx yarn build
     - name: Find?
       run: find -name "*" -not -path "./node_modules/*"

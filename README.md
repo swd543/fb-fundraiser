@@ -1,5 +1,5 @@
 # Facebook Fundraiser
-A webapp for managing fundraisers on Facebook
+A webapp for managing fundraisers on Facebook.
 
 # How to use
 The frontend code is hosted in the folder [spa](./spa). This project is configured with reactjs. Read the instructions in [here](./spa/README.md) for more details.

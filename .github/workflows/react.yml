@@ -13,7 +13,9 @@ jobs:
     strategy:
       matrix:
         node-version: [14.x, 12.x]
-
+    defaults:
+      run:
+        working-directory: spa
     steps:
     - uses: actions/checkout@v1
     - name: Use Node.js ${{ matrix.node-version }}
@@ -21,7 +23,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install Packages
-      run: cd spa && npx yarn install
+      run: npx yarn install
     - name: Deploy to GH Pages
       run: |
         git config --global user.email "swd543@gmail.com"

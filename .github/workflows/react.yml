@@ -24,12 +24,13 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Install Packages
       run: npx yarn install
-    - name: Deploy to GH Pages
-      run: |
-        git config --global user.email "swd543@gmail.com"
-        git config --global user.name "swd543"
-        git remote set-url origin https://${{secrets.PERSONAL_ACCESS_TOKEN}}@github.com/swd543/fb-fundraiser.git
-        npm run deploy
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@3.7.1
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages # The branch the action should deploy to.
+        FOLDER: build # The folder the action should deploy.
+        CLEAN: true # Automatically remove deleted files from the deploy branch
     - name: Updating Domain
       run: echo "Updated domain"
       env:

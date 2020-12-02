@@ -24,6 +24,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Install Packages
       run: npx yarn install
+    - name: Find?
+      run: find
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:

@@ -25,7 +25,7 @@ jobs:
     - name: Install Packages
       run: npx yarn install
     - name: Find?
-      run: . -path ./node_modules -prune
+      run: find -name "*" -not -path "./node_modules/*"
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:

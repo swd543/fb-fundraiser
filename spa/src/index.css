@@ -34,3 +34,12 @@ ul.header li a {
 .active {
   background-color: #0099FF;
 }
+.progressbutton {
+  padding: 5px 10px;
+  border: 1px solid #0099FF;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.progressbutton:hover{
+  background-color: #0099ff5d;
+}

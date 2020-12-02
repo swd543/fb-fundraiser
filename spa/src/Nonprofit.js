@@ -17,7 +17,7 @@ class Nonprofit extends Component {
             ))
           }
         </div>
-        <button>Create fundraiser</button>
+        <button className='progressbutton'>Create fundraiser</button>
       </div>
     );
   }

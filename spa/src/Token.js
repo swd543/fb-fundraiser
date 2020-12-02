@@ -15,7 +15,7 @@ class Token extends Component {
           <li>Eget erat</li>
           <li>Id porttitor</li>
         </ol>
-        <NavLink exact to="/nonprofit">Accept</NavLink>
+        <NavLink className='progressbutton' exact to="/nonprofit">Accept</NavLink>
       </div>
     );
   }

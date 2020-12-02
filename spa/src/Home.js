@@ -14,7 +14,7 @@ class Home extends Component {
         dis parturient montes, nascetur ridiculus mus.</p>
  
         <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
-        <NavLink exact to="/token">Accept</NavLink>
+        <NavLink className='progressbutton' exact to="/token">Accept</NavLink>
       </div>
     );
   }

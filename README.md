@@ -1,6 +1,6 @@
 # Facebook Fundraiser 
 
-![CI](https://github.com/swd543/fb-fundraiser/workflows/CI/badge.svg)
+![Deployment(master)](https://github.com/swd543/fb-fundraiser/workflows/Deployment(master)/badge.svg)
 A webapp for managing fundraisers on Facebook.
 
 # How to use

@@ -1,4 +1,6 @@
-# Facebook Fundraiser
+# Facebook Fundraiser 
+
+![CI](https://github.com/swd543/fb-fundraiser/workflows/CI/badge.svg
 A webapp for managing fundraisers on Facebook.
 
 # How to use

@@ -1,14 +1,12 @@
 import React, { Component } from "react";
 import {
-  Route,
-  NavLink,
-  HashRouter
+  HashRouter, NavLink, Route
 } from "react-router-dom";
-import Home from "./Home";
-import Token from "./Token";
 import Contact from "./Contact";
 import Exit from "./Exit";
+import Home from "./Home";
 import Nonprofit from "./Nonprofit";
+import Token from "./Token";
 
 class Main extends Component {
 

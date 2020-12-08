@@ -5,7 +5,7 @@ class Token extends Component {
   render() {
     return (
       <React.Fragment>
-        <h2>Token access</h2>
+        <h1>Token access</h1>
         <p>Mauris sem velit, vehicula eget sodales vitae,
         rhoncus eget sapien:</p>
         <ol>
@@ -15,7 +15,7 @@ class Token extends Component {
           <li>Eget erat</li>
           <li>Id porttitor</li>
         </ol>
-        <Link to="/nonprofit" style={{display:'flex'}}>
+        <Link to="/nonprofit" className='link'>
           <button className='progressbutton'>Accept</button>
         </Link>
       </React.Fragment>

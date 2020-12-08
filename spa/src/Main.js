@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import {
   HashRouter, NavLink, Route
 } from "react-router-dom";
-import Contact from "./Contact";
-import Exit from "./Exit";
-import Home from "./Home";
-import Nonprofit from "./Nonprofit";
-import Token from "./Token";
+import Confirmation from "./pages/Confirmation";
+import Contact from "./pages/Contact";
+import Exit from "./pages/Exit";
+import Home from "./pages/Home";
+import Nonprofit from "./pages/Nonprofit";
+import Token from "./pages/Token";
 
 class Main extends Component {
 
@@ -15,7 +16,7 @@ class Main extends Component {
       <HashRouter>
         <React.Fragment>
           <ul className="header">
-            <li><NavLink exact to="/">Welcome</NavLink></li>
+            <li><NavLink exact to="/" style={{pointerEvents:'none'}}>Welcome</NavLink></li>
             <li><NavLink to="/token" style={{pointerEvents:'none'}}>Token access</NavLink></li>
             <li><NavLink to="/nonprofit" style={{pointerEvents:'none'}}>Choose fundraiser</NavLink></li>
             <li><NavLink to="/contact" style={{pointerEvents:'none'}}>Contact</NavLink></li>
@@ -27,6 +28,7 @@ class Main extends Component {
             <Route path="/nonprofit" component={Nonprofit}/>
             <Route path="/contact" component={Contact}/>
             <Route path="/exit" component={Exit}/>
+            <Route path="/confirm" component={Confirmation}/>
           </div>
         </React.Fragment>
       </HashRouter>

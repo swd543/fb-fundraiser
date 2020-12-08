@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import StarRating from '../components/StarRating';
 
 export const BaseRandom = ({ title, showRating=true, ratingDescription, showDescription = true, items = [] }) => {
   return (
     <React.Fragment>
-      <h2>Choose your nonprofit</h2>
+      <h1>Choose your nonprofit</h1>
       {
         showDescription && (
           <p>
@@ -26,7 +27,9 @@ export const BaseRandom = ({ title, showRating=true, ratingDescription, showDesc
           ))
         }
       </form>}
-      <button className='progressbutton'>Create fundraiser</button>
+      <Link to="/confirm" className='link'>
+        <button className='progressbutton'>Create fundraiser</button>
+      </Link>
     </React.Fragment>
   )
 }

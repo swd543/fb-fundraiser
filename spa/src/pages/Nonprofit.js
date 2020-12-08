@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BaseRandom } from "./randomization/BaseRandom";
+import { BaseRandom } from "./BaseRandom";
 
 const options = [
   'Living Goods (community health + more general information)',
@@ -17,7 +17,7 @@ const randomPages = [Random1, Random2, Random3, Random4]
 class Nonprofit extends Component {
   render() {
     return (
-      randomPages[Math.floor(Math.random()*10000 % randomPages.length)]
+      randomPages[Math.floor((Math.random()*3296) % randomPages.length)]
     );
   }
 }

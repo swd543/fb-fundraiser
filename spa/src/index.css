@@ -20,6 +20,9 @@ ul.header li a {
   padding: 20px;
   display: inline-block;
 }
+.active {
+  background-color: #66b9f0;
+}
 .content {
   background-color: white;
   padding: 20px;
@@ -33,12 +36,10 @@ ul.header li a {
 .content li {
   margin-bottom: 10px;
 }
-.active {
-  background-color: #66b9f0;
-}
+
 .progressbutton {
   margin: auto;
-  min-width: 64px;
+  min-width: 84px;
   padding: 8px 10px;
   border: 1px solid black;
   text-decoration: none;
@@ -49,4 +50,5 @@ ul.header li a {
 }
 .link{
   display: inline-flex;
+  text-decoration: none;
 }

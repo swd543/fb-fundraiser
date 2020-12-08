@@ -13,7 +13,7 @@ class Main extends Component {
   render() {
     return (
       <HashRouter>
-        <div>
+        <React.Fragment>
           <ul className="header">
             <li><NavLink exact to="/">Welcome</NavLink></li>
             <li><NavLink to="/token" style={{pointerEvents:'none'}}>Token access</NavLink></li>
@@ -28,7 +28,7 @@ class Main extends Component {
             <Route path="/contact" component={Contact}/>
             <Route path="/exit" component={Exit}/>
           </div>
-        </div>
+        </React.Fragment>
       </HashRouter>
     );
   }

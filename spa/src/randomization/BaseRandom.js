@@ -1,5 +1,5 @@
-import React from 'react'
 import PropTypes from 'prop-types';
+import React from 'react';
 import StarRating from '../components/StarRating';
 
 export const BaseRandom = ({ title, showRating=true, ratingDescription, showDescription = true, items = [] }) => {
@@ -13,19 +13,19 @@ export const BaseRandom = ({ title, showRating=true, ratingDescription, showDesc
           </p>
         )
       }
-      {items && <div style={{ display: 'flex', flexDirection: 'column' }}>
+      {items && <form style={{ margin: 16 }}>
         {
           items.map((s,i) => (
             <div key={i}>
               {showRating && <StarRating fillPercent={Math.random()*75 + 25} label={ratingDescription}/>}
-              <input type='radio' name='charity'/>
-              <label>
+              <input type='radio' name='charity' id={i}/>
+              <label htmlFor={i}>
                 {s}
               </label>
             </div>
           ))
         }
-      </div>}
+      </form>}
       <button className='progressbutton'>Create fundraiser</button>
     </React.Fragment>
   )

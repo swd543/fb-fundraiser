@@ -5,7 +5,7 @@ const options = [
   'Living Goods (community health + more general information)',
   'Sankara Netharaya Home Trust (health-cataract surgery + more general information)',
   'Water for South Sudan (clean water access + more general information)',
-  'BRAC USA (global poverty -livelihood support + more general information + cost effectiveness information)']
+  'BRAC USA (global poverty -livelihood support + more general information + cost effectiveness)']
 
 const Random1=<BaseRandom items={options} ratingDescription="Quality rating from Impact Matters"/>
 const Random2=<BaseRandom items={options} ratingDescription="Quality rating from Charity Navigator"/>

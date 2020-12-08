@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
  
 class Token extends Component {
   render() {
     return (
-      <div>
+      <React.Fragment>
         <h2>Token access</h2>
         <p>Mauris sem velit, vehicula eget sodales vitae,
         rhoncus eget sapien:</p>
@@ -15,8 +15,10 @@ class Token extends Component {
           <li>Eget erat</li>
           <li>Id porttitor</li>
         </ol>
-        <NavLink className='progressbutton' exact to="/nonprofit">Accept</NavLink>
-      </div>
+        <Link to="/nonprofit" style={{display:'flex'}}>
+          <button className='progressbutton'>Accept</button>
+        </Link>
+      </React.Fragment>
     );
   }
 }

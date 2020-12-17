@@ -1,0 +1,33 @@
+{
+  "welcomePage":{
+    "headline":"Welcome to fundraiser app",
+    "description":"Cras facilisis urna ornare ex volutpat, et convallis erat elementum. Ut aliquam, ipsum vitae gravida suscipit, metus dui bibendum est, eget rhoncus nibh metus nec massa. Maecenas hendrerit laoreet augue nec molestie. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+  },
+  "tokenAccessPage":{
+    "headline":"Token access",
+    "description":"Mauris sem velit, vehicula eget sodales vitae, rhoncus eget sapien."
+  },
+  "nonprofitSelectPage":{
+    "headline":"Choose your nonprofit",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sfged do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "options":[
+      "Living Goods (community health + more general information)",
+      "Sankara Netharaya Home Trust (health-cataract surgery + more general information)",
+      "Water for South Sudan (clean water access + more general information)",
+      "BRAC USA (global poverty -livelihood support + more general information + cost effectiveness)"
+    ],
+    "hoverConfirmation":"This will post the fundraiser to your Facebook wall. Do you wish to continue?"
+  },
+  "confirmationEndPage":{
+    "headline":"Confirmation/End",
+    "description":"You have completed the survey successfully. Thank you for your time! Your contribution will go a long way in making the world a better place."
+  },
+  "exitPage":{
+    "headline":"Exit",
+    "description":"Are you sure you want to exit?"
+  },
+  "contactPage":{
+    "headline":"Contact us",
+    "description":"Contact us at givingthursday@gmail.com."
+  }
+}

@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
- 
+import { tokenAccessPage } from '../TextService.json'
+
 class Token extends Component {
   render() {
     return (
       <React.Fragment>
-        <h1>Token access</h1>
-        <p>Mauris sem velit, vehicula eget sodales vitae,
-        rhoncus eget sapien:</p>
+        <h1>{tokenAccessPage.headline}</h1>
+        <p>{tokenAccessPage.description}</p>
         <ol>
           <li>Nulla pulvinar diam</li>
           <li>Facilisis bibendum</li>
@@ -22,5 +22,5 @@ class Token extends Component {
     );
   }
 }
- 
+
 export default Token;

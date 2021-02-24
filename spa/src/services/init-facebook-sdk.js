@@ -23,7 +23,6 @@ export function initFacebookSdk() {
                 status: true,
                 version: 'v9.0'
             });
-            console.log('loaded')
             resolve('Finished loading SDK')
         };
     });

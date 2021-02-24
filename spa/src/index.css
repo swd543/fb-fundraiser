@@ -52,3 +52,17 @@ ul.header li a {
   display: inline-flex;
   text-decoration: none;
 }
+.container{
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  min-height: calc(100vh - 40px);
+}
+.banner{
+  display: inline-flex;
+  list-style-type: none;
+  padding: 0;
+}
+ul.banner li{
+  padding: 5px;
+}

@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { tokenAccessPage } from '../TextService.json'
+import { tokenAccessPage } from '../TextService.json';
 
 export const FBLoginButton = (props) => {
   return (
@@ -9,6 +9,11 @@ export const FBLoginButton = (props) => {
 }
 
 export const Token = () => {
+
+  useEffect(() => {
+    FB.XFBML.parse()
+  })
+
   return (
     <React.Fragment>
         <h1>{tokenAccessPage.headline}</h1>
@@ -20,10 +25,10 @@ export const Token = () => {
           <li>Eget erat</li>
           <li>Id porttitor</li>
         </ol>
-        <button className='progressbutton' onClick={
-          () => {
+        {/* <button className='progressbutton' onClick={
+          () => { 
             fetch('authenticate').then(r => r.text()).then(r => console.log(r))
-          }}>Call</button>
+          }}>Call</button> */}
         <Link to="/nonprofit" className='link'>
           <button className='progressbutton'>Accept</button>
         </Link>

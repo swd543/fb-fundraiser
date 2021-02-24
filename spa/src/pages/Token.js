@@ -20,13 +20,6 @@ export const Token = () => {
   
   // For rendering the facebook login button
   useEffect(() => {
-    window.FB.init({
-      appId: REACT_APP_FACEBOOK_APP_ID,
-      cookie: true,
-      xfbml: true,
-      status: true,
-      version: REACT_APP_FACEBOOK_SDK_VER
-    });
     FB.XFBML.parse()
   }, [])
 

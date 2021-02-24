@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/fb-fundraiser/static/css/main.4c1e1c76.chunk.css",
-    "main.js": "/fb-fundraiser/static/js/main.0538b302.chunk.js",
-    "main.js.map": "/fb-fundraiser/static/js/main.0538b302.chunk.js.map",
+    "main.js": "/fb-fundraiser/static/js/main.b8c80008.chunk.js",
+    "main.js.map": "/fb-fundraiser/static/js/main.b8c80008.chunk.js.map",
     "runtime-main.js": "/fb-fundraiser/static/js/runtime-main.bd23d438.js",
     "runtime-main.js.map": "/fb-fundraiser/static/js/runtime-main.bd23d438.js.map",
-    "static/js/2.cbbae50f.chunk.js": "/fb-fundraiser/static/js/2.cbbae50f.chunk.js",
-    "static/js/2.cbbae50f.chunk.js.map": "/fb-fundraiser/static/js/2.cbbae50f.chunk.js.map",
+    "static/js/2.728169f6.chunk.js": "/fb-fundraiser/static/js/2.728169f6.chunk.js",
+    "static/js/2.728169f6.chunk.js.map": "/fb-fundraiser/static/js/2.728169f6.chunk.js.map",
     "index.html": "/fb-fundraiser/index.html",
     "static/css/main.4c1e1c76.chunk.css.map": "/fb-fundraiser/static/css/main.4c1e1c76.chunk.css.map",
-    "static/js/2.cbbae50f.chunk.js.LICENSE.txt": "/fb-fundraiser/static/js/2.cbbae50f.chunk.js.LICENSE.txt"
+    "static/js/2.728169f6.chunk.js.LICENSE.txt": "/fb-fundraiser/static/js/2.728169f6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bd23d438.js",
-    "static/js/2.cbbae50f.chunk.js",
+    "static/js/2.728169f6.chunk.js",
     "static/css/main.4c1e1c76.chunk.css",
-    "static/js/main.0538b302.chunk.js"
+    "static/js/main.b8c80008.chunk.js"
   ]
 }

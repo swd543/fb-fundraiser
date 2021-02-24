@@ -8,8 +8,8 @@ export const Terms = () => {
         {terms.headline}
       </h1>
       {
-        terms.description && terms.description.map(d => (
-          <p>
+        terms.description && terms.description.map((d, i) => (
+          <p key={i}>
             {d}
           </p>
         ))

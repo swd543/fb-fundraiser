@@ -8,8 +8,8 @@ export const PrivacyPolicy = () => {
         {privacy.headline}
       </h1>
       {
-        privacy.description && privacy.description.map(d => (
-          <p>
+        privacy.description && privacy.description.map((d, i) => (
+          <p key={i}>
             {d}
           </p>
         ))

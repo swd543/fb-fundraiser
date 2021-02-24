@@ -11,12 +11,11 @@ const Random4 = <BaseRandom items={options} showDescription={false} showRating={
 
 const randomPages = [Random1, Random2, Random3, Random4]
 
-class Nonprofit extends Component {
-  render() {
-    return (
-      randomPages[Math.floor((Math.random() * 3296) % randomPages.length)]
-    );
-  }
+export const Nonprofit = () => {
+  return (
+    randomPages[Math.floor((Math.random() * 3296) % randomPages.length)]
+  );
 }
+
 
 export default Nonprofit;

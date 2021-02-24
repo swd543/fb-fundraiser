@@ -1,4 +1,4 @@
-const { REACT_APP_FACEBOOK_APP_ID } = process.env
+const { REACT_APP_FACEBOOK_APP_ID, REACT_APP_FACEBOOK_SDK_VER } = process.env
 
 export function initFacebookSdk() {
     return new Promise(resolve => {
@@ -21,7 +21,7 @@ export function initFacebookSdk() {
                 cookie: true,
                 xfbml: true,
                 status: true,
-                version: 'v9.0'
+                version: REACT_APP_FACEBOOK_SDK_VER
             });
             resolve('Finished loading SDK')
         };

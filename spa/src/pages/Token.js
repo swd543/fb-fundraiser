@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import { Routes } from "../Main";
 import { tokenAccessPage } from '../TextService.json';
-const { REACT_APP_FACEBOOK_APP_ID } = process.env
+const { REACT_APP_FACEBOOK_APP_ID, REACT_APP_FACEBOOK_SDK_VER } = process.env
 
 export const FBLoginButton = (props) => {
   return (
@@ -10,20 +11,25 @@ export const FBLoginButton = (props) => {
 }
 
 export const Token = () => {
+  const history = useHistory()
 
+  // Detect login and automatically move to nonprofit page
+  useEffect(()=>{
+    FB.Event.subscribe('auth.statusChange', response => response && response.status == 'connected' && history.push(Routes.NONPROFIT))
+  })
+  
+  // For rendering the facebook login button
   useEffect(() => {
     window.FB.init({
       appId: REACT_APP_FACEBOOK_APP_ID,
       cookie: true,
       xfbml: true,
       status: true,
-      version: 'v9.0'
+      version: REACT_APP_FACEBOOK_SDK_VER
     });
     FB.XFBML.parse()
-    window.FB.getLoginStatus(response => {
-      console.log(response)
-    })
   }, [])
+
 
   return (
     <React.Fragment>
@@ -36,14 +42,10 @@ export const Token = () => {
         <li>Eget erat</li>
         <li>Id porttitor</li>
       </ol>
-      {/* <button className='progressbutton' onClick={
-          () => { 
-            fetch('authenticate').then(r => r.text()).then(r => console.log(r))
-          }}>Call</button> */}
       <Link to="/nonprofit" className='link'>
         <button className='progressbutton'>Accept</button>
       </Link>
-      <FBLoginButton onClick={() => { console.log(window.FB.getLoginStatus()) }} />
+      <FBLoginButton/>
     </React.Fragment>
   );
 }

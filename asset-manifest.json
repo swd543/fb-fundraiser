@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/fb-fundraiser/static/css/main.4c1e1c76.chunk.css",
-    "main.js": "/fb-fundraiser/static/js/main.e944ee11.chunk.js",
-    "main.js.map": "/fb-fundraiser/static/js/main.e944ee11.chunk.js.map",
+    "main.js": "/fb-fundraiser/static/js/main.d7e0e523.chunk.js",
+    "main.js.map": "/fb-fundraiser/static/js/main.d7e0e523.chunk.js.map",
     "runtime-main.js": "/fb-fundraiser/static/js/runtime-main.bd23d438.js",
     "runtime-main.js.map": "/fb-fundraiser/static/js/runtime-main.bd23d438.js.map",
     "static/js/2.87b83f29.chunk.js": "/fb-fundraiser/static/js/2.87b83f29.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.bd23d438.js",
     "static/js/2.87b83f29.chunk.js",
     "static/css/main.4c1e1c76.chunk.css",
-    "static/js/main.e944ee11.chunk.js"
+    "static/js/main.d7e0e523.chunk.js"
   ]
 }

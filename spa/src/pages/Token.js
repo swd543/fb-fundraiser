@@ -12,6 +12,9 @@ export const Token = () => {
 
   useEffect(() => {
     FB.XFBML.parse()
+    window.FB.getLoginStatus(response =>{
+      console.log(response)
+    })
   })
 
   return (

@@ -19,7 +19,7 @@ export const Nonprofit = () => {
   const [authResponse, setAuthResponse] = useState(null)
 
   return (
-    randomPages[Math.floor((authResponse ? parseInt(authResponse.userID) : 3296 * 13) % randomPages.length)]
+    randomPages[Math.floor((authResponse ? parseInt(authResponse.userID) : Math.random() * 3296 * 13) % randomPages.length)]
   );
 }
 

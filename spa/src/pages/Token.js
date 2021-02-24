@@ -16,6 +16,7 @@ export const Token = () => {
   // Detect login and automatically move to nonprofit page
   useEffect(()=>{
     FB.Event.subscribe('auth.statusChange', response => response && response.status == 'connected' && history.push(Routes.NONPROFIT))
+    FB.getLoginStatus(response => response && response.status == 'connected' && history.push(Routes.NONPROFIT))
   })
   
   // For rendering the facebook login button
@@ -38,7 +39,7 @@ export const Token = () => {
       <Link to="/nonprofit" className='link'>
         <button className='progressbutton'>Accept</button>
       </Link>
-      <FBLoginButton/>
+      <FBLoginButton onClick={()=>console.log('p')}/>
     </React.Fragment>
   );
 }

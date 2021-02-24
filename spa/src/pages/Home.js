@@ -1,19 +1,25 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { welcomePage } from '../TextService.json'
+import React, { useEffect } from "react";
+import { Link, useHistory } from "react-router-dom";
+import { Routes } from "../Main";
+import { welcomePage } from '../TextService.json';
 
-class Home extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <h1>{welcomePage.headline}</h1>
-        <p>{welcomePage.description}</p>
-        <Link to="/token" className='link'>
-          <button className='progressbutton'>Agree</button>
-        </Link>
-      </React.Fragment>
-    );
-  }
+export const Home = () => {
+  const history = useHistory()
+  
+  useEffect(()=>{
+    FB.getLoginStatus(response => response && response.status == 'connected' && history.push(Routes.NONPROFIT))
+  })
+
+  return (
+    <React.Fragment>
+      <h1>{welcomePage.headline}</h1>
+      <p>{welcomePage.description}</p>
+      <Link to="/token" className='link'>
+        <button className='progressbutton'>Agree</button>
+      </Link>
+    </React.Fragment>
+  );
 }
+
 
 export default Home;

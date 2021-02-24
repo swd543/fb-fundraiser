@@ -1,6 +1,6 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import { nonprofitSelectPage } from "../TextService.json";
 import { BaseRandom } from "./BaseRandom";
-import { nonprofitSelectPage } from "../TextService.json"
 
 const options = nonprofitSelectPage.options
 

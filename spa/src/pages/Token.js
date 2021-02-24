@@ -36,9 +36,9 @@ export const Token = () => {
         <li>Eget erat</li>
         <li>Id porttitor</li>
       </ol>
-      <Link to="/nonprofit" className='link'>
+      {/* <Link to="/nonprofit" className='link'>
         <button className='progressbutton'>Accept</button>
-      </Link>
+      </Link> */}
       <FBLoginButton onClick={()=>console.log('p')}/>
     </React.Fragment>
   );

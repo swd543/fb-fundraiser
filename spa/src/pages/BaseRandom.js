@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import StarRating from '../components/StarRating';
 import { nonprofitSelectPage } from '../TextService.json'
 
 export const BaseRandom = ({ title, showRating = true, ratingDescription, showDescription = true, items = [] }) => {
+  
   return (
     <React.Fragment>
       <h1>{nonprofitSelectPage.headline}</h1>

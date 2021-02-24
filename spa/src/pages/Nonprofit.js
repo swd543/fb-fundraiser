@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useEffect, useState } from "react";
 import { BaseRandom } from "./BaseRandom";
 import { nonprofitSelectPage } from "../TextService.json"
 
@@ -12,8 +12,14 @@ const Random4 = <BaseRandom items={options} showDescription={false} showRating={
 const randomPages = [Random1, Random2, Random3, Random4]
 
 export const Nonprofit = () => {
+  useEffect(() => {
+    FB.getLoginStatus(response => setAuthResponse(response.authResponse))
+  })
+
+  const [authResponse, setAuthResponse] = useState(null)
+
   return (
-    randomPages[Math.floor((Math.random() * 3296) % randomPages.length)]
+    randomPages[Math.floor((authResponse ? parseInt(authResponse.userID) : 3296 * 13) % randomPages.length)]
   );
 }
 
